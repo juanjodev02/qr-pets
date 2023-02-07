@@ -1,4 +1,5 @@
 import { extendTheme } from '@chakra-ui/react'
+import { StepsTheme as Steps } from 'chakra-ui-steps';
 
 const fonts = { mono: `'Menlo', monospace` }
 
@@ -14,15 +15,15 @@ const theme = extendTheme({
     colors: {
       text: {
         default: '#16161D',
-        _dark: '#ade3b8',
+        _dark: '#16161D',
       },
       heroGradientStart: {
         default: '#7928CA',
-        _dark: '#e3a7f9',
+        _dark: '#7928CA',
       },
       heroGradientEnd: {
         default: '#FF0080',
-        _dark: '#fbec8f',
+        _dark: '#FF0080',
       },
     },
     radii: {
@@ -34,6 +35,9 @@ const theme = extendTheme({
   },
   fonts,
   breakpoints,
+  components: {
+    Steps
+  }
 })
 
 export default theme

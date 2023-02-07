@@ -22,7 +22,7 @@ export const CTA = () => (
       mx={2}
       width="full"
     >
-      chakra-ui
+      QR pets
     </Button>
     <Button
       as={ChakraLink}
